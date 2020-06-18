@@ -355,6 +355,9 @@ footer {
 }
 .icon-cross {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .backdrop {
   position: fixed;
@@ -387,8 +390,10 @@ footer {
 
 .modal b {
   color: var(--color-of-main-text);
+  text-transform: lowercase;
 }
 .close-button {
+  position: relative;
   display: block;
   margin-left: auto;
   margin-top: 8px;
