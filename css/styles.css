@@ -346,6 +346,66 @@ footer {
     url(../images/Header.jpg);
 }
 
+.order-service {
+  position: relative;
+  padding: 10px 32px;
+  background-color: var(--akcent);
+  color: var(--white-color);
+  position: relative;
+}
+.icon-cross {
+  position: absolute;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+
+  background-color: var(--white-color);
+  border-radius: 4px;
+}
+
+.modal b {
+  color: var(--color-of-main-text);
+}
+.close-button {
+  display: block;
+  margin-left: auto;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.close-button:hover,
+.close-button:focus {
+  background-color: var(--white-color);
+}
+
 .banner-title {
   font-weight: 900;
   font-size: 44px;
@@ -367,9 +427,10 @@ footer {
   line-height: 1.87;
   border-radius: 4px;
   padding: 10px 8px 10px 29px;
-  display: flex;
+  display: inline-flex;
   width: 200px;
   align-items: center;
+  margin-left: 12px;
 }
 .buttom.primary::after {
   content: "";
@@ -867,6 +928,7 @@ footer {
   margin-left: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .connect-icon {
   display: flex;
@@ -877,7 +939,9 @@ footer {
 .connect-icon .icon + .icon {
   margin-left: 10px;
 }
-
+.connect {
+  margin-left: 69px;
+}
 .connect b {
   display: inline-block;
   margin-bottom: 21px;
@@ -902,7 +966,22 @@ footer {
 .footer-icon {
   fill: var(--white-color);
 }
+.subscribe-place {
+  display: inline-flex;
+}
+.sending {
+  margin-left: 94px;
+}
 .sending b {
   display: inline-block;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+}
+
+.subscribe {
+  width: 358px;
+  background-color: var(--background-footer);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
