@@ -371,6 +371,7 @@ footer {
 }
 
 .backdrop.is-hidden {
+  position: relative;
   opacity: 0;
   pointer-events: none;
 }
@@ -389,8 +390,16 @@ footer {
 }
 
 .modal b {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--color-of-main-text);
   text-transform: lowercase;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.modal b::first-letter {
+  text-transform: uppercase;
 }
 .close-button {
   position: relative;
@@ -408,9 +417,37 @@ footer {
 }
 .close-button:hover,
 .close-button:focus {
+  fill: var(--akcent);
   background-color: var(--white-color);
 }
-
+.form-name {
+  min-width: 448px;
+  min-height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.first-input {
+  position: relative;
+}
+.form-lable {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+}
+.form-name:focus + .form-lable {
+  color: var(--akcent);
+  transform: translate(-40px, -40px);
+  font-size: 12px;
+}
+/*.form-name:selection {
+  border: 1px solid #2196f3;*/
+.form-name:hover,
+.form-name:focus {
+  border: 1px solid #2196f3;
+}
 .banner-title {
   font-weight: 900;
   font-size: 44px;
