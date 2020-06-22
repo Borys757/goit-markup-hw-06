@@ -397,8 +397,8 @@ form {
   font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.71%;
+  line-height: 1.71%;
+  letter-spacing: 0.03em;
 
   color: #757575;
 }
@@ -424,13 +424,26 @@ form {
   -webkit-appearance: none;
   position: absolute;
 }
-.form-check:after {
-  content: "";
+.check-lable {
   display: inline-flex;
+  align-items: center;
+}
+.checkbox {
+  display: inline-block;
+  margin-left: 52px;
+  margin-right: 9px;
   width: 16px;
   height: 15px;
-  background-color: tomato;
+  border: 2px solid black;
+  border-radius: 4px;
 }
+.form-check:checked + .checkbox {
+  background-image: url("../images/iconcheck.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border: none;
+}
+
 .modal b {
   display: block;
   margin-right: auto;
