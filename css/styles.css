@@ -1126,8 +1126,31 @@ footer {
 .footer-icon {
   fill: var(--white-color);
 }
-.subscribe-place {
+
+.subscribe-place form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-place button {
   display: inline-flex;
+  margin-left: 12px;
+  min-width: 200px;
+  min-height: 50px;
+  background: #2196f3;
+  color: var(--white-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 0px;
+}
+.subscribe-place button:after {
+  content: "";
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-image: url(../images/iconsend.svg);
 }
 .sending {
   margin-left: 94px;
@@ -1138,6 +1161,7 @@ footer {
 }
 
 .subscribe {
+  display: inline-flex;
   width: 358px;
   background-color: var(--background-footer);
   padding-top: 15px;
