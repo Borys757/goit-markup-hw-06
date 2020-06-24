@@ -420,6 +420,10 @@ form {
   display: flex;
   align-items: center;
 }
+.form-checkbox a {
+  margin-left: 5px;
+  color: var(--akcent);
+}
 .form-check {
   -webkit-appearance: none;
   position: absolute;
@@ -504,7 +508,7 @@ form {
 
 .form-name:focus + .form-lable,
 .form-name:not(:placeholder-shown) + .form-lable {
-  transform: translate(-40px, -40px);
+  transform: translate(-30px, -30px);
 }
 .icon-fname {
   display: inline-block;
