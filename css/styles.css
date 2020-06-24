@@ -1141,7 +1141,15 @@ footer {
   width: 358px;
   background-color: var(--background-footer);
   padding-top: 15px;
+  padding-left: 16px;
   padding-bottom: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.subscribe:hover,
+.subscribe:focus {
+  border: 1px solid #2196f3;
 }
