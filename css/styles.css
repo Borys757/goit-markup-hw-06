@@ -416,9 +416,11 @@ form {
 }
 
 .form-checkbox {
-  margin-top: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
 }
 .form-checkbox a {
   margin-left: 5px;
@@ -434,7 +436,6 @@ form {
 }
 .checkbox {
   display: inline-block;
-  margin-left: 52px;
   margin-right: 9px;
   width: 16px;
   height: 15px;
